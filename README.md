@@ -1,4 +1,4 @@
-# GoForth
+# goforthtraining.org
 
 Website for [GoForth Training Services](https://goforthtraining.org), built with [Eleventy](https://11ty.dev).
 
