@@ -1,0 +1,65 @@
+*, *::before, *::after {
+  /* box-sizing rule */
+  box-sizing: border-box;
+ 
+  /* remove default paddings and margins for better control of elements */
+  padding: 0;
+  margin: 0;
+}
+
+body {  
+  /* increase line heights for readability */
+  line-height: 1.5;
+
+  /* improve text rendering */
+  -webkit-font-smoothing: antialiased;
+
+  /* prevent font size inflation */
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* improve line-wrapping for paragraphs
+note: not applicable to firefox and safari */
+p {
+  text-wrap: pretty;
+}
+
+/* make line height for headings shorter and balance out text distribution */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+  /* text-wrap: balance; */
+}
+
+/* remove list styles on ul, ol elements with a list role */
+ul[role='list'],
+ol[role='list'],
+menu[role='list'] {
+  list-style: none;
+}
+
+/* default styling for lists */
+:is(ul, ol):not(:has([class])) {
+  list-style-position: outside;
+  margin-inline-start: var(--unit);
+  & li {
+      padding-inline-start: calc(var(--unit)/2);
+  }
+}
+
+/* default paddings for tables */
+th, td {
+  padding: calc(var(--unit)/2);
+}
+
+/* improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}

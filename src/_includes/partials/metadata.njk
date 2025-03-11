@@ -1,0 +1,30 @@
+{% set pageTitle = title %}
+{% set siteTitle = site.title %}
+{% set currentUrl = site.url + page.url %}
+
+{% set pageDescription = description %}
+{% if not description %}
+    {% set pageDescription = site.description %}
+{% endif %}
+
+{# Clean up page title #}
+{% set pageTitle = pageTitle | safe %}
+
+{% if pageTitle == siteTitle %}
+    <title>{{ siteTitle }}</title>
+{% else %}
+    <title>{{ pageTitle }} - {{ siteTitle }}</title>
+{% endif %}
+
+<meta name="description" content="{{ site.description }}" />
+
+<meta property="og:site_name" content="{{ siteTitle }}" />
+<meta property="og:title" content="{{ pageTitle }}" />
+<meta property="og:description" content="{{ pageDescription }}">
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/images/og-image.png" />
+<meta property="og:url" content="{{ currentUrl }}" />
+
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/fonts.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">

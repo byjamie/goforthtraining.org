@@ -1,0 +1,11 @@
+<nav>
+    <div class="logo-title">
+        <img class="logo" src="/images/logo.png" alt="GoForth logo">
+        <div class="nav-title">{{ site.title }}</div>
+    </div>
+    <menu role="list" class="nav-links">
+        {% for entry in collections.all | eleventyNavigation %}
+        <li><a href="{{ entry.url }}" {% if entry.url == page.url %}aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+        {% endfor %}
+    </menu>
+</nav>

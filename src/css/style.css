@@ -1,0 +1,212 @@
+:root {
+    /* default colors */
+    --text: #444;
+    --background: #fff;
+    --accent: #51a05c;
+
+    --unit: 1em;
+    --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+body, main {
+    display: grid;
+    grid-template-columns: auto;
+    gap: var(--unit);
+}
+
+.callout, ul, ol, figure {
+    display: grid;
+    grid-template-columns: auto;
+    gap: calc(var(--unit)/2);
+}
+
+body {
+    font-size: 1.2em;
+    color: var(--text);
+    background: var(--background);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+h1, .slogan {
+    color: var(--accent);
+}
+
+/* navigation bar */
+nav {
+    background: var(--background);
+    box-shadow: var(--shadow);
+    padding: 1em 1.5em;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: calc(var(--unit)/2);
+    position: sticky;
+    top: 0;
+    & a {
+        color: var(--text);
+    }
+    & a:hover {
+        color: var(--accent);
+    }
+}
+
+.logo-title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--unit);
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+}
+
+.nav-title {
+    font-size: 1.1em;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    & a {
+        text-decoration: none;
+    }
+}
+
+/* header and hero banner */
+header {
+    padding: 5em 10em;
+    display: flex;
+    align-items: center;
+}
+
+.hero-banner {
+    max-width: 60em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: auto;
+    gap: 0 2em;
+    align-items: center;
+    & img {
+        width: 400px;
+    }
+}
+
+.hero-text {
+    display: grid;
+    grid-template-columns: auto;
+    gap: calc(var(--unit)/2);
+}
+
+.slogan {
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.1em;
+}
+
+.content {
+    padding: 4em 2em;
+}
+
+main {
+    max-width: 900px;
+    margin: 5vh auto;
+    padding: var(--unit);
+}
+
+.callout {
+    padding: 1em;
+    border-radius: 1em;
+    background: color-mix(in srgb, var(--accent) 20%, transparent);
+    border: 2px dashed var(--accent);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid color-mix(in srgb, var(--text) 50%, transparent);
+}
+
+tr:nth-child(even) {
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+thead {
+    text-align: left;
+    background: color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+details {
+    padding: calc(var(--unit)/2) var(--unit);
+    background: color-mix(in srgb, var(--accent) 20%, transparent);
+    border-radius: calc(var(--unit)/2);
+    > summary {
+        font-weight: 700;
+    }
+}
+details[open] > summary {
+    margin-block-end: calc(var(--unit)/2);
+}
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: var(--unit);
+}
+
+figcaption {
+    text-align: center;
+    font-size: .9em;
+    font-style: italic;
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        padding: 0;
+    }
+    main {
+        margin: auto;
+    }
+    .hero-banner {
+        grid-template-columns: 1fr;
+        gap: 1em 0;
+        padding: 2em;
+        align-items: center;
+        & img {
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

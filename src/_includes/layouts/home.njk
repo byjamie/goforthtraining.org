@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    {% include "partials/metadata.njk" %}
+</head>
+<body>
+    {% include "partials/nav.njk" %}
+    <header>
+    <div class="hero-banner">
+        <img src="/images/logo.png" alt="GoForth logo">
+        <div class="hero-text">
+            <div class="slogan">Preparing OFWs for a better tomorrow</div>
+            <p>It is <strong>not</strong> impossible nor that costly to upgrade yourself! Get your Certificate of Commendation now, which can be used as an added credential when applying for work or visa.</p>
+        </div>
+    <div>
+</header>
+
+<main>
+    {{ content | safe }}
+</main>
+</body>
+</html>
