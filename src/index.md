@@ -9,9 +9,9 @@ eleventyNavigation:
 
 ## Our Objective
 
-GoForth Training Services (GTS) was formed to improve the skills and knowledge of Overseas Filipino / Foreign Workers (OFWs) so they can be more confident in their ability, better equipped in their present work, and competitive in the workforce abroad.
+GoForth Training Services (GTS) was formed to improve the skills and knowledge of Overseas Filipino/Foreign Workers (OFWs) so they can be more confident in their abilities, better equipped in their present work, and stay competitive in the workforce abroad.
 
-**Filipinos and other foreign workers who are legally staying in Singapore are qualified to enroll.**</div>
+**Filipinos and other foreign workers who are legally staying in Singapore are qualified to enrol.**</div>
 
 <figure>
     <div class="collage">

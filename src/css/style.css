@@ -133,9 +133,9 @@ thead {
 }
 
 details {
-    padding: 1em;
     background: color-mix(in oklch, var(--accent) 20%, transparent);
     border-radius: .5em;
+    border: .1em solid color-mix(in oklch, var(--accent) 40%, var(--background));
 }
 
 details + details {
@@ -144,6 +144,17 @@ details + details {
 
 details summary {
     font-weight: 700;
+    padding: 1em;
+}
+
+details[open] summary {
+    padding-block-end: 1em;
+    border-block-end: .1em solid color-mix(in oklch, var(--accent) 40%, var(--background));
+}
+
+details[open] p {
+    padding: 1em;
+    margin: 0;
 }
 
 figure:has(img) {

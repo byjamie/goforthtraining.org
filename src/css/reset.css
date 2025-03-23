@@ -30,6 +30,11 @@
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4em;
   }
+
+  /* Remove top margin on the first heading on the page */
+  main h1:first-child {
+    margin-block-start: 0;
+  }
   
   /* Remove default style, margin and padding on list and menu elements with a list role */
   :is(ul, ol, menu)[role="list"] {
