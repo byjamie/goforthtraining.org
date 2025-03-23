@@ -1,29 +1,20 @@
 :root {
-    /* default colors */
     --text: #444;
     --background: #fff;
     --accent: #51a05c;
-
-    --unit: 1em;
     --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-body, main {
-    display: grid;
-    grid-template-columns: auto;
-    gap: var(--unit);
-}
-
-.callout, ul, ol, figure {
-    display: grid;
-    grid-template-columns: auto;
-    gap: calc(var(--unit)/2);
-}
-
 body {
-    font-size: 1.2em;
+    font-size: round(1.2em, 1px);
     color: var(--text);
     background: var(--background);
+}
+
+main {
+    max-width: 900px;
+    margin: 5vh auto;
+    padding: 1em;
 }
 
 a {
@@ -35,31 +26,34 @@ h1, .slogan {
     color: var(--accent);
 }
 
-/* navigation bar */
+/* Navigation bar */
 nav {
     background: var(--background);
     box-shadow: var(--shadow);
     padding: 1em 1.5em;
-    font-size: 1rem;
+    font-size: round(.9em, 1px);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: calc(var(--unit)/2);
+    gap: .5em;
     position: sticky;
     top: 0;
-    & a {
-        color: var(--text);
-    }
-    & a:hover {
-        color: var(--accent);
-    }
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--accent);
 }
 
 .logo-title {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--unit);
+    column-gap: .5em;
     align-items: center;
 }
 
@@ -68,7 +62,7 @@ nav {
 }
 
 .nav-title {
-    font-size: 1.1em;
+    font-size: round(1.1em, 1px);
     color: var(--accent);
     font-weight: 700;
 }
@@ -77,12 +71,8 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    & a {
-        text-decoration: none;
-    }
 }
 
-/* header and hero banner */
 header {
     padding: 5em 10em;
     display: flex;
@@ -117,16 +107,10 @@ header {
     padding: 4em 2em;
 }
 
-main {
-    max-width: 900px;
-    margin: 5vh auto;
-    padding: var(--unit);
-}
-
 .callout {
-    padding: 1em;
+    padding-inline: 1em;
     border-radius: 1em;
-    background: color-mix(in srgb, var(--accent) 20%, transparent);
+    background: color-mix(in oklch, var(--accent) 20%, transparent);
     border: 2px dashed var(--accent);
 }
 
@@ -136,34 +120,40 @@ table {
 }
 
 table, th, td {
-    border: 1px solid color-mix(in srgb, var(--text) 50%, transparent);
+    border: 1px solid color-mix(in oklch, var(--text) 50%, transparent);
 }
 
 tr:nth-child(even) {
-    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    background: color-mix(in oklch, var(--accent) 10%, transparent);
 }
 
 thead {
     text-align: left;
-    background: color-mix(in srgb, var(--accent) 25%, transparent);
+    background: color-mix(in oklch, var(--accent) 25%, transparent);
 }
 
 details {
-    padding: calc(var(--unit)/2) var(--unit);
-    background: color-mix(in srgb, var(--accent) 20%, transparent);
-    border-radius: calc(var(--unit)/2);
-    > summary {
-        font-weight: 700;
-    }
+    padding: 1em;
+    background: color-mix(in oklch, var(--accent) 20%, transparent);
+    border-radius: .5em;
 }
-details[open] > summary {
-    margin-block-end: calc(var(--unit)/2);
+
+details + details {
+    margin-block-start: 1em;
 }
+
+details summary {
+    font-weight: 700;
+}
+
+figure:has(img) {
+    margin: 0;
+}
+
 .collage {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 4px;
 }
 
 .column {
@@ -177,12 +167,13 @@ details[open] > summary {
     vertical-align: middle;
     width: 100%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: var(--unit);
+    border-radius: .5em;
 }
 
 figcaption {
+    padding: 1em;
     text-align: center;
-    font-size: .9em;
+    font-size: round(.9em, 1px);
     font-style: italic;
 }
 
