@@ -1,0 +1,31 @@
+<footer>
+    <div class="footer-info">
+        <div class="footer-about">
+            <h1>About us</h1>
+            <div>{{ site.description }}</div>
+        </div>
+        <nav aria-label="footer">
+            <h2>Links</h2>
+            <menu role="list">
+                {% for link in collections.all | eleventyNavigation %}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endfor %}
+                {% for social in site.social %}
+                <li><a href="{{ social.url }}">{{ social.title }}</a></li>
+                {% endfor %}
+            </menu>
+        </nav>
+        <div class="address">
+            <h2>Contact us</h2>
+            <address>
+                <i class="ti ti-map-pin" aria-label="Address"></i>
+                <div>400 Orchard Road<br>#05-10 Orchard Towers<br>Singapore 238875</div>
+                <i class="ti ti-mail" aria-label="Email"></i>
+                <div><a href="mailto:goforth.info@gmail.com">goforth.info@gmail.com</a></div>
+                <i class="ti ti-phone" aria-label="Phone number"></i>
+                <div>8669 8867</div>
+            </address>
+        </div>  
+    </div>
+    <div class="footer-description">GoForth Training Services © 2025. All rights reserved.</div>
+</footer>

@@ -2,5 +2,10 @@
     "title": "GoForth Training Services",
     "url": "https://goforthtraining.org/",
     "description": "We help Overseas Filipino/Foreign Workers (OFWs) improve their skills and help them gain qualifications in order to provide them with more career opportunities.",
-    "language": "en"
+    "social": [
+        {
+            "title": "Facebook",
+            "url": "https://facebook.com/goforth.gts"
+        }
+    ]
 }

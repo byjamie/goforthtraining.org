@@ -22,12 +22,16 @@ a {
     text-decoration: underline;
 }
 
+a:hover {
+    color: var(--text);
+}
+
 h1, .slogan {
     color: var(--accent);
 }
 
 /* Navigation bar */
-nav {
+.nav-bar {
     background: var(--background);
     box-shadow: var(--shadow);
     padding: 1em 1.5em;
@@ -188,6 +192,43 @@ figcaption {
     font-style: italic;
 }
 
+footer {
+    background-color: color-mix(in oklch, var(--accent) 50%, var(--background));
+    font-size: round(.8em, 1px);
+    padding: 3em;
+}
+
+.footer-description {
+    text-align: center;
+    margin-block-start: 2em;
+}
+
+.footer-info {
+    padding-inline: 5em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1em 6em;
+}
+
+footer :is(h1, h2) {
+    font-size: round(1.2em, 1px);
+    /* text-transform: uppercase; */
+    color: var(--text);
+    font-weight: 800;
+}
+
+footer address {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: .5em;
+    align-items: baseline;
+    font-style: normal;
+}
+
+footer a {
+    color: var(--text);
+}
+
 @media screen and (max-width: 900px) {
     header {
         padding: 0;
@@ -204,11 +245,24 @@ figcaption {
             margin: auto;
         }
     }
+    .footer-about {
+        grid-column: span 3;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .column {
         flex: 100%;
         max-width: 100%;
+    }
+    .footer-about {
+        grid-column: span 1;
+    }
+    .footer-info {
+        grid-template-columns: auto;
+        padding: 1em;
+    }
+    footer {
+        padding: 1.5em;
     }
 }
