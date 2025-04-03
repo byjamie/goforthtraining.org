@@ -15,7 +15,7 @@
   "keywords": [],
   "author": "Jamie Tan",
   "license": "MIT",
-  "description": "",
+  "description": "Website for GoForth Training Services",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-navigation": "^0.3.5"
