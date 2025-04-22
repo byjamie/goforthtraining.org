@@ -4,7 +4,7 @@ Website for [GoForth Training Services](https://goforthtraining.org), built with
 
 ## Usage
 
-[Node.js](https://nodejs.org/) is required. Once you have Node.js installed, install dependencies by running `npm install`.
+[Bun](https://bun.sh) is required. Once you have Bun installed, install dependencies by running `bun install`.
 
-1. To preview locally, run `npm start`
-2. To build, run `npm run build`
+1. To preview locally, run `bun run start`
+2. To build, run `bun run build`
