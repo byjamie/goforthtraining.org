@@ -21,11 +21,11 @@
                 <i class="ti ti-map-pin" aria-label="Address"></i>
                 <div>400 Orchard Road<br>#05-10 Orchard Towers<br>Singapore 238875</div>
                 <i class="ti ti-mail" aria-label="Email"></i>
-                <div><a href="mailto:goforth.info@gmail.com">goforth.info@gmail.com</a></div>
+                <div><a href="mailto:{{ site.email }}">{{ site.email }}</a></div>
                 <i class="ti ti-phone" aria-label="Phone number"></i>
-                <div>8669 8867</div>
+                <div>{{ site.phone }}</div>
             </address>
         </div>  
     </div>
-    <div class="footer-description">GoForth Training Services © 2025. All rights reserved.<br>UEN: 53110423X</div>
+    <div class="footer-description">{{ site.title }} © 2025. All rights reserved.<br>UEN: {{ site.uen }}</div>
 </footer>
