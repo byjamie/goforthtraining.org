@@ -9,7 +9,7 @@
     margin: 0;
 
     /* Increase line heights for readability */
-    line-height: 1.5em;
+        line-height: 1.5;
   
     /* Improve text rendering */
     -webkit-font-smoothing: antialiased;
@@ -28,7 +28,7 @@
   
   /* Make line height for headings shorter */
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.4em;
+        line-height: 1.2;
   }
 
   /* Remove top margin on the first heading on the page */
