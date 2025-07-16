@@ -32,4 +32,6 @@ eleventyNavigation:
     <p>You can see the registrar or the director of the training centre. You may also email or call GTS.</p>
 </details>
 
-For more information, please call or text 8669 8867. You can also email us at [goforth.info@gmail.com](mailto:goforth.info@gmail.com).
+---
+
+If you have other inquiries, please call or text {{ site.phone }}. Alternatively, you can email us at [{{ site.email }}](mailto:{{ site.email }}).

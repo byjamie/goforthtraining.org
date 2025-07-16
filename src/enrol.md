@@ -25,12 +25,12 @@ eleventyNavigation:
 You may register through any of the following methods:
 
 1. At our office located at 400 Orchard Road, #05-10 Orchard Towers Singapore 238875.
-2. Go directly to the places where GTS classes are being conducted. Please message or call 8669 8867 to ask for the venue.
-3. Email [goforth.info@gmail.com](mailto:goforth.info@gmail.com).
+2. Go directly to the places where GTS classes are being conducted. Please message or call {{ site.phone }} to ask for the venue.
+3. Email [{{ site.email }}](mailto:{{ site.email }}).
 
 ## Enrolment procedure
 
-1. Fill in a registration form. You are encouraged to take at least two (2) subjects per term so you can finish your course within a year. Have the last four (4) digits of your passport or Work Permit ready.
+1. Fill in a registration form. You are encouraged to take at least **two** subjects per term so you can finish your course within a year. Have the last four digits of your passport or Work Permit ready.
 2. Take and read the GTS Guidelines carefully.
 
 Registration fee is **non-refundable**.

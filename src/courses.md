@@ -10,7 +10,7 @@ eleventyNavigation:
 
 ## Class schedule
 
-As the schedule is different for every term, please inquire from GoForth Training Services. We conduct classes for each subject 3 to 4 times within a two-month period, and are conducted in English.
+As the schedule is different for every term, please inquire from GoForth Training Services. We conduct classes for each subject 3 to 4 times within a two-month period. Classes are conducted in English.
 
 ## Available courses
 
