@@ -25,6 +25,12 @@ a:hover {
     color: var(--text);
 }
 
+hr {
+    margin-block: 2em;
+    border: 0;
+    border-block-end: 2px dotted color-mix(in oklch, var(--text) 40%, transparent);
+}
+
 h1, .slogan {
     color: var(--accent);
 }
