@@ -32,8 +32,17 @@
 
 :root {
     --body-font: "Figtree", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+
+    /* Fluid type scale by https://utopia.fyi */
+    --step--2: clamp(0.7813rem, 0.7608rem + 0.1022vw, 0.84rem);
+    --step--1: clamp(0.9375rem, 0.8984rem + 0.1957vw, 1.05rem);
+    --step-0: clamp(1.125rem, 1.0598rem + 0.3261vw, 1.3125rem);
+    --step-1: clamp(1.35rem, 1.2489rem + 0.5054vw, 1.6406rem);
+    --step-2: clamp(1.62rem, 1.4702rem + 0.7492vw, 2.0508rem);
+    --step-3: clamp(1.944rem, 1.7285rem + 1.0774vw, 2.5635rem);
 }
 
 body {
     font-family: var(--body-font);
+    font-size: var(--step-0);
 }
