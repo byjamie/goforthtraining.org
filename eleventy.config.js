@@ -13,7 +13,6 @@ export const config = {
         "md",
         "njk",
         "html",
-        "liquid",
         "11ty.js"
     ],
     markdownTemplateEngine: "njk",
