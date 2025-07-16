@@ -1,5 +1,8 @@
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import markdownIt from "markdown-it";
+import markdownItAnchor from "markdown-it-anchor";
+import pluginTOC from "@uncenter/eleventy-plugin-toc";
+import slugify from "slugify";
 
 export default function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -8,13 +11,33 @@ export default function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/fonts");
     eleventyConfig.addWatchTarget("src/css");
 
-    /* Markdown config */
-    let options = {
+    // Config for anchored headings
+    let markdownItAnchorOptions = {
+        level: [2, 3, 4],
+        slugify: (str) => slugify(str, {
+            lower: true,
+            strict: true,
+            remove: /["]/g,
+        }),
+        tabIndex: false,
+    };
+
+    // Markdown config
+    let markdownLibrary = markdownIt({
         html: true, // Enable HTML tags in source
         linkify: true, // Auto-convert URL-like text to links
         typographer: true, // Enable language-neutral replacement + quotes beautification. Full list of replacements: https://github.com/markdown-it/markdown-it/blob/master/lib/rules_core/replacements.mjs
-    };
-    eleventyConfig.setLibrary("md", markdownIt(options));
+    }).use(markdownItAnchor, markdownItAnchorOptions);
+
+    eleventyConfig.setLibrary("md", markdownLibrary);
+
+    // Table of Contents plugin by uncenter
+    eleventyConfig.addPlugin(pluginTOC, {
+        ul: true,
+        wrapper: function(toc) {
+            return `<details open class="toc"><summary><strong>Table of Contents</strong></summary>${toc}</details>`;
+        }
+    });
 };
 
 export const config = {

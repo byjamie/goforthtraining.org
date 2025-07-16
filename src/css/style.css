@@ -153,9 +153,9 @@ thead {
 }
 
 details {
-    background: color-mix(in oklch, var(--accent) 20%, transparent);
+    background: color-mix(in oklch, var(--accent) 15%, transparent);
     border-radius: .5em;
-    border: .1em solid color-mix(in oklch, var(--accent) 40%, var(--background));
+    border: 2px solid color-mix(in oklch, var(--accent) 30%, var(--background));
 }
 
 details + details {
@@ -164,17 +164,21 @@ details + details {
 
 details summary {
     font-weight: 700;
-    padding: 1em;
+    padding: .7em 1em;
 }
 
 details[open] summary {
-    padding-block-end: 1em;
-    border-block-end: .1em solid color-mix(in oklch, var(--accent) 40%, var(--background));
+    padding-block-end: .7em;
+    border-block-end: 2px solid color-mix(in oklch, var(--accent) 30%, var(--background));
 }
 
 details[open] p {
-    padding: 1em;
+    padding: .7em 1em;
     margin: 0;
+}
+
+details[open] > :is(ul, ol) {
+    margin-inline-start: 2em;
 }
 
 figure:has(img) {

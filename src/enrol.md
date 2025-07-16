@@ -5,8 +5,6 @@ eleventyNavigation:
     key: Enrol
     order: 3
 ---
-# Enrolment
-
 ## Requirements
 
 1. Work permit for identification
