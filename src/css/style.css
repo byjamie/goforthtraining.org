@@ -183,6 +183,7 @@ details[open] > :is(ul, ol) {
 
 figure:has(img) {
     margin: 0;
+    margin-block-start: 30px;
 }
 
 .collage {
