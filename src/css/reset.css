@@ -31,6 +31,11 @@
         line-height: 1.2;
     }
 
+    /* Remove top margin of subheadings that precede paragraphs and lists */
+    :is(h2, h3, h4):has(+ :is(p, ul, ol)) {
+        margin-block-end: 0;
+    }
+
     /* Remove top margin on the first heading on the page */
     main :is(h1, h2, h3, h4):first-child {
         margin-block-start: 0;
