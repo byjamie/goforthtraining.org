@@ -38,6 +38,10 @@ export default function (eleventyConfig) {
             return `<details open class="toc"><summary><strong>Table of Contents</strong></summary>${toc}</details>`;
         }
     });
+
+    eleventyConfig.addPairedShortcode("callout", function(content, icon, label) {
+        return `<div class="callout"><div class="callout-label"><i class="ti ti-${icon}" aria-hidden="true"></i><b>${label}</b></div>${content}</div>`;
+    })
 };
 
 export const config = {

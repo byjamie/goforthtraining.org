@@ -128,10 +128,24 @@ header {
 }
 
 .callout {
-    padding-inline: 1em;
-    border-radius: 1em;
-    background: color-mix(in oklch, var(--accent) 20%, transparent);
-    border: 2px dashed var(--accent);
+    margin-block: 1.5em;
+    padding: 1em;
+}
+
+.callout-label {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    align-items: center;
+    color: var(--accent);
+}
+
+.callout > .callout-label + p {
+    margin-block-start: 0;
+}
+
+.callout > p:last-child {
+    margin-block-end: 0;
 }
 
 table {
@@ -152,7 +166,7 @@ thead {
     background: color-mix(in oklch, var(--accent) 25%, transparent);
 }
 
-details {
+details, .callout {
     background: color-mix(in oklch, var(--accent) 15%, transparent);
     border-radius: .5em;
     border: 2px solid color-mix(in oklch, var(--accent) 30%, var(--background));

@@ -8,15 +8,14 @@ eleventyNavigation:
 ## Requirements
 
 1. Work permit for identification
-2. Registration fee of $60 (includes one T-shirt)
-3. Payment for one or two subjects
-4. Payments are to be made via PayNow or Cash only. Receipts will be issued to you.
+2. Registration fee of **$60** (includes one T-shirt)
+3. Payment for one or two subjects, which are to be made via **PayNow or Cash only**. Receipts will be issued to you.
 
-<div class="callout">
+{% callout "alert-square-rounded", "Note" %}
 
-**Note:** Please check that payment is made payable to: GoForth Marketing & Services Pte. Ltd.
+Please check that payment is made payable to **GoForth Marketing & Services Pte. Ltd.**
 
-</div>
+{% endcallout %}
 
 ## How to enrol?
 
