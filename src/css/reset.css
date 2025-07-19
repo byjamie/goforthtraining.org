@@ -32,7 +32,7 @@
     }
 
     /* Remove top margin on the first heading on the page */
-    main h1:first-child {
+    main :is(h1, h2, h3, h4):first-child {
         margin-block-start: 0;
     }
 

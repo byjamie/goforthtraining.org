@@ -118,9 +118,7 @@ header {
 }
 
 .slogan {
-    font-weight: 700;
-    font-size: var(--step-3);
-    line-height: 1.1em;
+    margin: 0;
 }
 
 .content {
