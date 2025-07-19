@@ -1,37 +1,23 @@
 @font-face {
-    font-family: "Figtree";
-    src: url("/fonts/Figtree-Regular.woff2") format("woff2");
-    font-weight: 400;
+    font-family: "Instrument Sans";
+    src: url("/fonts/InstrumentSans.woff2") format("woff2-variations");
+    font-weight: 400 700;
     font-style: normal;
     font-display: swap;
+    font-feature-settings: "ss02" on, "ss03" on, "ss04" on;
 }
 
 @font-face {
-    font-family: "Figtree";
-    src: url("/fonts/Figtree-Italic.woff2") format("woff2");
-    font-weight: 400;
+    font-family: "Instrument Sans";
+    src: url("/fonts/InstrumentSans-Italic.woff2") format("woff2-variations");
+    font-weight: 400 700;
     font-style: italic;
     font-display: swap;
-}
-
-@font-face {
-    font-family: "Figtree";
-    src: url("/fonts/Figtree-Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Figtree";
-    src: url("/fonts/Figtree-BoldItalic.woff2") format("woff2");
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
+    font-feature-settings: "ss02" on, "ss03" on, "ss04" on;
 }
 
 :root {
-    --body-font: "Figtree", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
+    --body-font: "Instrument Sans", Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif;
 
     /* Fluid type scale by https://utopia.fyi */
     --step--2: clamp(0.7813rem, 0.7608rem + 0.1022vw, 0.84rem);
