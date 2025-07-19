@@ -154,7 +154,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid color-mix(in oklch, var(--text) 50%, transparent);
+    border: 2px solid color-mix(in oklch, var(--accent) 30%, transparent);
 }
 
 tr:nth-child(even) {
