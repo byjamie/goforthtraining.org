@@ -135,6 +135,7 @@ header {
     column-gap: 5px;
     align-items: center;
     color: var(--accent);
+    margin-block-end: 5px;
 }
 
 .callout > .callout-label + p {
