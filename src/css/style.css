@@ -5,15 +5,22 @@
     --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     color: var(--text);
     background: var(--background);
+    display: flex;
+    flex-direction: column;
 }
 
 main {
     max-width: 900px;
     margin: 5vh auto;
     padding: 1em;
+    flex: 1 0 auto;
 }
 
 a {
@@ -46,8 +53,6 @@ h1, .slogan {
     justify-content: space-between;
     align-items: center;
     gap: .5em;
-    position: sticky;
-    top: 0;
 }
 
 nav a {
@@ -229,6 +234,7 @@ footer {
     background-color: color-mix(in oklch, var(--accent) 50%, var(--background));
     font-size: var(--step--1);
     padding: 3em;
+    flex-shrink: 0;
 }
 
 .footer-description {
@@ -266,7 +272,7 @@ footer a {
         padding: 0;
     }
     main {
-        margin: auto;
+        margin: 5vh auto;
     }
     .hero-banner {
         grid-template-columns: 1fr;
