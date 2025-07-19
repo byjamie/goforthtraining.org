@@ -192,7 +192,7 @@ details[open] p {
 }
 
 details[open] > :is(ul, ol) {
-    margin-inline-start: 2em;
+    margin-inline: 2em 1em;
 }
 
 figure:has(img) {
