@@ -2,6 +2,7 @@
     --text: #444;
     --background: #fff;
     --accent: #51a05c;
+    --border: #acd4b1;
     --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -157,7 +158,7 @@ table {
 }
 
 table, th, td {
-    border: 2px solid color-mix(in oklch, var(--accent) 30%, transparent);
+    border: 2px solid var(--border);
 }
 
 tr:nth-child(even) {
