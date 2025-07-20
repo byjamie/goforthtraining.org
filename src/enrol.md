@@ -7,9 +7,9 @@ eleventyNavigation:
 ---
 ## Requirements
 
-1. Work permit for identification
-2. Registration fee of **$60** (includes one T-shirt)
-3. Payment for one or two subjects, which are to be made via **PayNow or Cash only**. Receipts will be issued to you.
+- Work permit for identification
+- Registration fee of **$60** (includes one T-shirt)
+- Payment for one or two subjects, which are to be made via **PayNow or Cash only**. Receipts will be issued to you.
 
 {% callout "alert-square-rounded", "Note" %}
 
@@ -21,9 +21,9 @@ Please check that payment is made payable to **GoForth Marketing & Services Pte.
 
 You may register through any of the following methods:
 
-1. At our office located at 400 Orchard Road, #05-10 Orchard Towers Singapore 238875.
-2. Go directly to the places where GTS classes are being conducted. Please message or call {{ site.phone }} to ask for the venue.
-3. Email [{{ site.email }}](mailto:{{ site.email }}).
+- At our office located at 400 Orchard Road, #05-10 Orchard Towers Singapore 238875.
+- Go directly to the places where GTS classes are being conducted. Please message or call {{ site.phone }} to ask for the venue.
+- Email [{{ site.email }}](mailto:{{ site.email }}).
 
 ## Enrolment procedure
 
