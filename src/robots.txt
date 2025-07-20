@@ -34,6 +34,7 @@ User-agent: FriendlyCrawler
 User-agent: Gemini-Deep-Research
 User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
+User-agent: GoogleAgent-Mariner
 User-agent: GoogleOther
 User-agent: GoogleOther-Image
 User-agent: GoogleOther-Video
@@ -74,8 +75,8 @@ User-agent: SemrushBot-OCOB
 User-agent: SemrushBot-SWA
 User-agent: Sidetrade indexer bot
 User-agent: SummalyBot
-User-agent: TikTokSpider
 User-agent: Thinkbot
+User-agent: TikTokSpider
 User-agent: Timpibot
 User-agent: VelenPublicWebCrawler
 User-agent: WARDBot

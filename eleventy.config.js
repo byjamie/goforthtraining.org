@@ -10,6 +10,7 @@ export default function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/images");
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/fonts");
+    eleventyConfig.addPassthroughCopy("src/robots.txt");
     eleventyConfig.addWatchTarget("src/css");
 
     // Config for anchored headings
