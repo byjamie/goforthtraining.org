@@ -3,6 +3,7 @@ import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import pluginTOC from "@uncenter/eleventy-plugin-toc";
 import slugify from "slugify";
+import { InputPathToUrlTransformPlugin } from "@11ty/eleventy";
 
 export default function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -31,6 +32,8 @@ export default function (eleventyConfig) {
 
     eleventyConfig.setLibrary("md", markdownLibrary);
 
+    eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
+
     // Table of Contents plugin by uncenter
     eleventyConfig.addPlugin(pluginTOC, {
         ul: true,
@@ -41,7 +44,7 @@ export default function (eleventyConfig) {
 
     eleventyConfig.addPairedShortcode("callout", function(content, icon, label) {
         return `<div class="callout"><div class="callout-label"><i class="ti ti-${icon}" aria-hidden="true"></i><b>${label}</b></div>${content}</div>`;
-    })
+    });
 };
 
 export const config = {
