@@ -1,20 +1,20 @@
-{% set pageTitle = title %}
-{% set siteTitle = site.title %}
-{% set currentUrl = site.url + page.url %}
+{%- set pageTitle = title -%}
+{%- set siteTitle = site.title -%}
+{%- set currentUrl = site.url + page.url -%}
 
-{% set pageDescription = description %}
-{% if not description %}
-    {% set pageDescription = site.description %}
-{% endif %}
+{%- set pageDescription = description -%}
+{%- if not description -%}
+    {%- set pageDescription = site.description -%}
+{%- endif -%}
 
 {# Clean up page title #}
-{% set pageTitle = pageTitle | safe %}
+{%- set pageTitle = pageTitle | safe -%}
 
-{% if pageTitle == siteTitle %}
+{%- if pageTitle == siteTitle -%}
     <title>{{ siteTitle }}</title>
-{% else %}
+{%- else -%}
     <title>{{ pageTitle }} - {{ siteTitle }}</title>
-{% endif %}
+{%- endif -%}
 
 <meta name="description" content="{{ site.description }}" />
 
